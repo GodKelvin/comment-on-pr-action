@@ -1,0 +1,7 @@
+name: 'Auto Comment on PR'
+description: 'Posta um comentário automático em novos pull requests'
+author: 'Kelvin Lehrback'
+inputs: {}
+runs:
+  using: 'node16'
+  main: 'index.js'
