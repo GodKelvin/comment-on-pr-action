@@ -31838,18 +31838,15 @@ async function run() {
     const { context } = github;
     const author = context.payload.pull_request.user.login;
 
-    const commentBody = `
-      Olá, @${author}! 👋
+const commentBody = `Olá, @${author}! 👋\n
+Obrigado por abrir este PR.\n
+Por favor, verifique se:\n
+- [ ] Todos os testes estão passando ⚠️\n
+- [ ] O PR está vinculado a uma issue (se aplicável) 🚩\n
+- [ ] Você preencheu a descrição do PR com detalhes claros ✨\n
+Nos avise se precisar de ajuda! 🚀`;
 
-      Obrigado por abrir este PR.
 
-      Por favor, verifique se:
-      - [ ] Todos os testes estão passando
-      - [ ] O PR está vinculado a uma issue (se aplicável)
-      - [ ] Você preencheu a descrição do PR com detalhes claros
-
-      Nos avise se precisar de ajuda! 🚀
-    `;
 
     await octokit.rest.issues.createComment({
       owner: context.repo.owner,
