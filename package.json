@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kelvin Lehrback",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.11.1",
