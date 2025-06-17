@@ -16,8 +16,6 @@ Sempre que um PR é aberto:
 
 ---
 
-### Exemplo do comentário automático:
-
 # Comment on PR GitHub Action
 
 Esta action adiciona automaticamente um comentário a pull requests quando eles são abertos.
