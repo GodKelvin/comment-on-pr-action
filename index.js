@@ -9,8 +9,7 @@ async function run() {
     const { context } = github;
     const author = context.payload.pull_request.user.login;
 
-    const commentBody = `
-Olá, @${author}! 👋
+const commentBody = `Olá, @${author}! 👋
 
 Obrigado por abrir este PR.
 
@@ -20,6 +19,7 @@ Por favor, verifique se:
 - [ ] Você preencheu a descrição do PR com detalhes claros
 
 Nos avise se precisar de ajuda! 🚀`;
+
 
     await octokit.rest.issues.createComment({
       owner: context.repo.owner,
